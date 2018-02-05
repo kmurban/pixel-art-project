@@ -28,7 +28,7 @@ $('button').mouseout(function(){
 function getDimensions() {
 	gridWidth = widthInput.val();
 	gridHeight = heightInput.val();
-	if (Math.floor(700/gridWidth) < Math.floor(700/gridHeight)) {
+	if (Math.floor(740/gridWidth) < Math.floor(740/gridHeight)) {
 		cellDim = Math.floor(700/gridWidth);
 	} else {
 		cellDim = Math.floor(700/gridHeight);
