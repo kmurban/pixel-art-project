@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>Pick-a-Pixel</title>
-    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/pixel-app.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
 </head>
 <body>
 	
@@ -15,18 +16,18 @@
 		<input id="width" type="number">
 		<label for="height">Grid height: </label>
 		<input id="height" label="Height: " type="number">
+		<label for="color">Choose a color: </label>
+		<input id="color" type="color" value="#dc42f4">
+		
 	</form>
-	
-	<button id="build-button">Build grid</button>
-	<button id="clear-button">Clear grid</button>
-
-	<div class="grid-container">
-
-	</div>
-	<script
-	  src="https://code.jquery.com/jquery-3.3.1.min.js"
-	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	  crossorigin="anonymous">
-	</script>
+	<section class = "buttons">
+		<button id="build-button">Build grid</button>
+		<button id="clear-button">Clear grid</button>
+	</section>
+	<section class = "grid-container">
+		<div class="grid">
+		</div>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/pixel-app.js"></script>
 </body>
